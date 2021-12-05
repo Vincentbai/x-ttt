@@ -2,6 +2,9 @@ import React, { Component} from 'react'
 
 import {getAllRecords} from '../../api'
 
+/**
+ * new changes
+ */
 export default class PopUp_page extends Component {
 
     constructor(props) {

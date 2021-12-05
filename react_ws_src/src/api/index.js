@@ -1,5 +1,9 @@
 import ajax from './ajax'
 
+/**
+ * new changes
+ */
+
 let BASE = 'http://localhost:5000'
 
 export const updateTotalVisitCount = () => ajax(BASE + '/totalCount')

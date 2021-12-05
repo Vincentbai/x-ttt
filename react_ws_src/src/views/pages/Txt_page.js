@@ -14,10 +14,12 @@ export default class Txt_page extends Component {
 			totalCount:0
 		}
 
+		// changes
 		this.renderCount = this.renderCount.bind(this)
 
 	}
 	
+	// changes
 	componentDidMount(){
 		
 		updateTotalVisitCount().then(result => {
@@ -32,9 +34,8 @@ export default class Txt_page extends Component {
 
 	}
 
+	// changes
 	renderCount (){
-
-		console.log('-------------')
 
 		const currentCount = this.state.totalCount
 	
@@ -67,7 +68,8 @@ export default class Txt_page extends Component {
 					<h1>{page_x.pg_name}</h1>
 					
 					<div dangerouslySetInnerHTML={{__html: page_x.txt.__cdata}} />
-
+					
+					{/* changes */}
 					<h2> Welcome, You are the {this.renderCount()} visitor!</h2>
 
 					<div className='btns'>

@@ -1,5 +1,8 @@
 import axios from 'axios'
 
+/**
+ * new changes
+ */
  export default function ajax(url, data={}, type='GET'){
 
     return new Promise((resolve, reject)=>{

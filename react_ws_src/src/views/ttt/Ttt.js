@@ -6,6 +6,7 @@ import SetGameType from './SetGameType'
 
 import GameMain from './GameMain'
 
+// changes
 import {getIPInfo, addOrUpdateRecord} from '../../api'
 
 export default class Ttt extends Component {
@@ -59,7 +60,7 @@ export default class Ttt extends Component {
 		app.settings.curr_user = {}
 		app.settings.curr_user.name = n
 		
-		// get ip address / country 
+		// get ip address / country // changes
 		getIPInfo().then(result =>{
 			
 			app.settings.curr_user.ip = result.IPv4

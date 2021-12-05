@@ -7,6 +7,7 @@ import TweenMax from 'gsap'
 import rand_arr_elem from '../../helpers/rand_arr_elem'
 import rand_to_fro from '../../helpers/rand_to_fro'
 
+// changes
 import {updateWinCount} from '../../api'
 
 export default class SetName extends Component {
@@ -303,6 +304,7 @@ export default class SetName extends Component {
 			this.refs[set[1]].classList.add('win')
 			this.refs[set[2]].classList.add('win')
 
+			// changes
 			updateWinCount(app.settings.curr_user).then(result=>{
 
 				if(result.status === 200){
