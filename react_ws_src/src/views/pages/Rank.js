@@ -5,7 +5,7 @@ import {getAllRecords} from '../../api'
 /**
  * new changes
  */
-export default class PopUp_page extends Component {
+export default class Rank extends Component {
 
     constructor(props) {
         super(props)

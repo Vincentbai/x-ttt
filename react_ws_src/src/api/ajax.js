@@ -10,8 +10,8 @@ import axios from 'axios'
         let promise
     
         if(type === 'GET'){
-            promise = axios.get(url,{ //配置对象
-                params:data // 指定请求参数
+            promise = axios.get(url,{ 
+                params:data
             });
         }else{
             promise = axios.post(url, data)
